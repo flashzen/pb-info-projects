@@ -1,2 +1,6 @@
 ﻿  ConsoleApplication1.cpp
-  ConsoleApplication1.vcxproj -> C:\Users\Administrator\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+C:\Users\Administrator\Documents\GitHub\pb-info-projects\ConsoleApplication1\ConsoleApplication1.cpp(285,9): error C2440: 'return': cannot convert from 'int (__cdecl *)(void)' to 'int'
+      C:\Users\Administrator\Documents\GitHub\pb-info-projects\ConsoleApplication1\ConsoleApplication1.cpp(285,9):
+      There is no context in which this conversion is possible
+  
+C:\Users\Administrator\Documents\GitHub\pb-info-projects\ConsoleApplication1\ConsoleApplication1.cpp(285,16): error C2059: syntax error: ')'

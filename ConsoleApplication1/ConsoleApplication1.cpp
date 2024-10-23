@@ -13,6 +13,8 @@
 
 using namespace std;
 
+#define NRPROB problema13
+
 static bool estePar(int n)
 {
 	if (n % 2 == 0)
@@ -29,6 +31,44 @@ static bool estePar(int n)
 	return false;
 }
 
+/*
+
+2. Se citește un număr natural n de 4 cifre. Să se afișeze valoarea a+b+c, 
+unde a se obține din n eliminând prima cifră, b se obține din n eliminând primele două cifre, iar c este cifra unităților lui n.
+De exemplu, dacă n=2347, atunci valoarea afișată este 347+47+7=401.
+*/
+
+static int problema13()
+{
+	int n;
+	cin >> n;
+	int a = n % 1000;
+	int b = n % 100;
+	int c = n % 10;
+	int s = a + b + c;
+	cout << s;
+
+	return false;
+}
+
+/*
+	1. Se citește un număr natural n de 4 cifre. Să se afișeze câtul și restul împărțirii
+		numărului format din primele două cifre ale lui n la numărul format din ultimele două cifre ale lui n. De exemplu, dacă n=5413, atunci 54 împărțit la 13 dă restul 2 și câtul 4.
+*/
+
+static int problema12()
+{
+	int n;
+	cin >> n;
+	int a = n % 10000 / 100;
+	int b = n % 100;
+	int s = a / b;
+	int v = a % b;
+	cout << v << " " << s;
+	return false;
+}
+
+// test for estePar which now works !!
 static int problema11()
 {
 	int f;
@@ -242,5 +282,5 @@ static int problema1()
 
 int main()
 {
-	return problema11();
+	return NRPROB();
 }
