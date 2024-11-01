@@ -10,10 +10,13 @@
 
 */
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
-#define NRPROB problema13
+# define M_PI           3.14159265358979323846  /* pi */
+
+#define NRPROB problemaf3x27
 
 static bool estePar(int n)
 {
@@ -31,6 +34,273 @@ static bool estePar(int n)
 	return false;
 }
 
+/*
+--------------------------------------------------------------------------------------------
+		
+		FISA 3
+
+--------------------------------------------------------------------------------------------
+
+*/
+//  sa se det val a si b si sa se afiseze cel mai mic, respectiv cel mai mare numar format din toate cifrele prime distrincte 
+// n 4 cifre ultima cifra a sumei obtinute din nr de 3 cifre formate din n prin eliminarea unei singure cifre
+
+static int problemaf3x27()
+{
+	int n;
+	cout << "Introdu un numar de patru cifre: ";
+	cin >> n;
+
+	// Extrage fiecare cifră a numărului de patru cifre
+	int a = n / 1000;         // prima cifră
+	int b = (n / 100) % 10;   // a doua cifră
+	int c = (n / 10) % 10;    // a treia cifră
+	int d = n % 10;           // a patra cifră
+
+	// Formează cele trei numere de trei cifre prin eliminarea unei cifre
+	int num1 = b * 100 + c * 10 + d; // eliminăm prima cifră
+	int num2 = a * 100 + c * 10 + d; // eliminăm a doua cifră
+	int num3 = a * 100 + b * 10 + d; // eliminăm a treia cifră
+	int num4 = a * 100 + b * 10 + c; // eliminăm a patra cifră
+
+	// Calculează suma celor trei numere obținute
+	int suma = num1 + num2 + num3 + num4;
+
+	// Obține ultima cifră a sumei
+	int ultimaCifra = suma % 10;
+
+	// Afișează rezultatul
+	cout << "Ultima cifra a sumei este: " << ultimaCifra << endl;
+
+	return 0;
+}
+
+// nr n de 4 cifre , oglinditul nr
+static int problemaf3x25()
+{
+	int n;
+	cin >> n;
+	int x = n / 1000;
+	int y = n % 1000 / 100;
+	int z = n % 100 / 10;
+	int v = n % 10;
+
+	cout << v << z << y << x;
+	return false;
+}
+
+// n 5 cifre , mA a cifrelor sale
+
+static int problemaf3x24()
+{
+	int n;
+	cout << "Introdu un numar de 5 cifre pentru a calcula media aritmetica a cifrelor: ";
+	cin >> n;
+	int x = n / 10000;
+	int y = n % 10000 / 1000;
+	int z = n % 1000 / 100;
+	int v = n % 100 / 10;
+	int b = n % 10;
+	int ma = (x + y + z + v + b) / 5;
+	cout << "Media aritmetica: = "<<  ma;
+	return false;
+}
+// se citeste n de 2 cifre patratul valorii din interschimbarea cifrelor
+
+static int problemaf3x23()
+{
+	int n;
+	cout << "Introdu un numar de doua cifre, nenul: ";
+	cin >> n;
+	int a = n % 100/10;
+	int b = n % 10;
+	int c = b;
+	int d = a;
+	int j = c * 10 + d;
+	int p = j * j;
+	cout << p;
+	return false;
+}
+
+// nr a 5 cifre, nr format din prima, a 3a si a 5a cifra din a
+
+static int problemaf3x22()
+{
+	int n;
+	cout << "Introdu un nr de 5 cifre: ";
+	cin >> n;
+	int x = n / 10000;
+	int y = n % 10000 / 1000;
+	int z = n % 1000 / 100;
+	int v = n % 100 / 10;
+	int b = n % 10;
+	cout << "Nr format din prima, a treia si a cincea cifra este: " << x << z << b;
+	return false;
+}
+
+// se citeste n de 6 cifre sa se elim nr din mijloc si sa se afiseze rezultatul
+
+static int problemaf3x21()
+{
+	int n;
+	cin >> n;
+	int x = n / 100000;
+	int y = n % 100000 / 10000;
+	int z = n % 10000 / 1000;
+	int v = n % 1000 / 100;
+	int b = n % 100 / 10;
+	int c = n % 10;
+	cout << "Nr obtinut dupa eliminarea cifrelor din mijloc este: " << x << y << b << c;
+
+	return false;
+}
+
+// se citeste de la tastatura nr n, sa se determine in a si b si sa se afiseze pe ecran despartit schimband prima cifra cu ultima cifra si schimband intre ele cifrele din mijloc
+
+static int problemaf3x20()
+{
+	int n;
+	cout << "Introdu nr n: ";
+	cin >> n;
+	int x = n / 1000;
+	int y = n % 1000 / 100;
+	int z = n % 100 / 10;
+	int v = n % 10;
+
+	cout << "A: " << v << z << y << x << "\nB: " << x << z << y << v;
+
+	return false;
+}
+
+// se citeste n, sa se interschimbe cifra unitatilor cu cea a sutelor si sa se afiseze nr
+static int problemaf3x18()
+{
+	int n;
+	cout << "Introdu nr n: ";
+	cin >> n;
+	int x = n / 100;
+	int y = n % 100 / 10;
+	int z = n % 10;
+	cout << x << z << y ;
+
+	return false;
+}
+
+// Fie un numar natural n format din 3 cifre, citit de la tastatura. Sa se afiseze pe cate un rand de ecran cifrele sale incepand cu cifra unitatilor.
+
+static int problemaf3x17()
+{
+	int a;
+	cout << "Introdu numarul a: ";
+	cin >> a;
+	int x = a / 100;
+	int y = a % 100 / 10;
+	int z = a % 10;
+	cout << "Cifra unitatilor: " << z << "\nCifra zecilor: " << y << "\nCifra sutelor: " << x;
+
+	return false;
+}
+
+// variabilele a si b retin valorile a doua numere de cel mult 4 cifre fiecare, citite de la tastatura . sa se interschimbe valorile celor doua variabile si sa se afiseze
+// pe ecran continutu lor separat printr-un spatiu
+static int problemaf3x14()
+{
+	int a, b;
+	cout << "Introdu cifra a: ";
+	cin >> a;
+	cout << "Introdu cifra b: ";
+	cin >> b;
+	int xa = b;
+	int xb = a;
+	cout << "Valoarea interschimbata a nr a este: " << xa << "\nValoarea interschimbata a nr b este: " << xb;
+	return false;
+}
+
+/*
+
+		E		N		D.
+
+*/
+/*
+ r - raza cercului si aria cercului
+*/
+
+static int problema19()
+{
+	int r;
+	cin >> r;
+	double ar = M_PI * r * r;
+	double lung = 2 * M_PI * r;
+	cout << r << " " << ar << " " << lung;
+	return false;
+}
+/*
+cunoscand a,b,c perimetru si aria triunghiului
+*/
+
+static int problema18()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	double p = a + b + c;
+	double ar = sqrt(p*(p - a)*(p - b)*(p - c)) / 2;
+	cout << p << " " << ar;
+	return false;
+}
+
+
+/*
+	sa se determine ma si mg a a,b
+
+*/
+
+static int problema17()
+{
+	float a, b;
+	cin >> a >> b;
+	float ma = (a + b) / 2;
+	float mg = sqrt(a * b);
+	cout << ma << " " << mg;
+	return false;
+}
+
+/*
+Cunoscand cele 4 note obtinute de un elev la disciplina informatica pe parcursul unui an scolar, citite de la tastatura,
+sa se calculeze media.
+*/
+
+static int problema16()
+{
+	int a, b, c, d;
+	cin >> a >> b >> c >> d;
+	cout << (a + b + c + d) / 4;
+	return false;
+}
+/*
+	Sa se calculeze si sa se afiseze pe ecran suma primelor n numere naturale nenule, valoarea lui n,
+	nr natural nenul fiind de 4 cifre fiind citit de la tastatura 
+*/
+
+static int problema15()
+{
+	int n;
+	cin >> n;
+	cout << n*(n + 1) / 2;
+	return false;
+}
+
+/*
+Fie a şi b două numere naturale nenule, fiecare având cel mult 4 cifre, citite de la tastatură. Să se determine şi
+să se afişeze pe câte un rând de ecran valoarea maximă şi valoarea minimă dintre cele două numere citite, folosind formula:
+*/
+
+static int problema14()
+{
+	int a, b;
+	cin >> a >> b;
+	cout << ((a + b + abs(a - b)) / 2) << " " << ((a + b - abs(a - b)) / 2);
+	return false;
+}
 /*
 
 2. Se citește un număr natural n de 4 cifre. Să se afișeze valoarea a+b+c, 
