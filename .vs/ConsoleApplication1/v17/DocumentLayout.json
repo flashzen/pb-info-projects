@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\pb-info-projects\\",
+  "WorkspaceRootPath": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Administrator\\Documents\\GitHub\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ConsoleApplication1.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "DocumentMoniker": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "ToolTip": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAxwBIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-17T12:56:40.677Z",
               "EditorCaption": ""
