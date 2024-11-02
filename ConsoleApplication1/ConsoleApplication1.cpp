@@ -11,12 +11,15 @@
 */
 #include <iostream>
 #include <cmath>
+#include <numeric>
+#include <stdio.h>
+#include <string>
 
 using namespace std;
 
 # define M_PI           3.14159265358979323846  /* pi */
 
-#define NRPROB problemaf3x27
+#define NRPROB problemaf3x38
 
 static bool estePar(int n)
 {
@@ -34,6 +37,29 @@ static bool estePar(int n)
 	return false;
 }
 
+int gcd(int a, int b) {
+	// Find Minimum of a and b
+	int res = min(a, b);
+
+	// Testing divisiblity with all numbers starting from
+  // min(a, b) to 1
+
+	while (res > 1) {
+
+		// If any number divide both a and b, so we
+		// got the answer
+		if (a % res == 0 && b % res == 0)
+			break;
+		res--;
+	}
+	return res;
+}
+
+void reduceFraction(int& num, int& den) {
+	int gcdValue = gcd(num, den);
+	num /= gcdValue;
+	den /= gcdValue;
+}
 /*
 --------------------------------------------------------------------------------------------
 		
@@ -42,7 +68,114 @@ static bool estePar(int n)
 --------------------------------------------------------------------------------------------
 
 */
+static int problemaf3x38()
+{
+	double a, b;
+	cin >> a >> b;
+	double s = pow(a, b);
+	cout << s;
+	return false;
+}
+
+static int problemaf3x35()
+{
+	int n, x;
+	cin >> n;
+
+	// Extragem cifrele
+	int zeci = n / 10;
+	int unitati = n % 10;
+
+	// Dublăm fiecare cifră
+	int dubluZeci = zeci * 2;
+	int dubluUnitati = unitati * 2;
+
+	// Construim numărul rezultat
+	x = dubluZeci * 100 + dubluUnitati;  // formăm numărul nou
+
+	// Afișăm rezultatul
+	cout << x << endl;
+
+	return 0;
+}
+
+static int problemaf3x34()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+
+	// Calculăm sumele dintre fiecare două numere distincte
+	int suma1 = a + b;
+	int suma2 = a + c;
+	int suma3 = b + c;
+
+	// Afișăm rezultatele
+	cout << "Suma dintre " << a << " si " << b << " este: " << suma1 << endl;
+	cout << "Suma dintre " << a << " si " << c << " este: " << suma2 << endl;
+	cout << "Suma dintre " << b << " si " << c << " este: " << suma3 << endl;
+
+	return 0;
+}
+
+static int problemaf3x31()
+{
+	int n;
+	cout << "Enter a 4-digit number: ";
+	cin >> n;
+
+	// Convert the number to a string
+	string nStr = to_string(n);
+	string result = "";
+
+	// Insert '0' after each digit
+	for (char digit : nStr) {
+		result += digit;
+		result += '0';  // Append '0' after each digit
+	}
+
+	// Output the result
+	cout << "The new number is: " << result << endl;
+
+	return 0;
+}
+
+static int problemaf3x29()
+{
+	int a, b, c, d;
+
+	// Input the two fractions
+	cout << "Enter numerator and denominator of the first fraction: ";
+	cin >> a >> b;
+	cout << "Enter numerator and denominator of the second fraction: ";
+	cin >> c >> d;
+
+	// Calculate the sum
+	int sumNum = a * d + c * b;
+	int sumDen = b * d;
+	reduceFraction(sumNum, sumDen);  // Simplify the fraction
+
+	// Calculate the product
+	int prodNum = a * c;
+	int prodDen = b * d;
+	reduceFraction(prodNum, prodDen);  // Simplify the fraction
+
+	// Output the results
+	cout << sumNum << "/" << sumDen << " " << prodNum << "/" << prodDen << endl;
+
+	return 0;
+}
+
 //  sa se det val a si b si sa se afiseze cel mai mic, respectiv cel mai mare numar format din toate cifrele prime distrincte 
+
+static int problemaf3x28()
+{
+	int a = 2357;  
+	int b = 7532;
+
+	cout << a << " " << b << endl;
+	return false;
+}
+
 // n 4 cifre ultima cifra a sumei obtinute din nr de 3 cifre formate din n prin eliminarea unei singure cifre
 
 static int problemaf3x27()
