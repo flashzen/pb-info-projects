@@ -15,11 +15,12 @@
 #include <stdio.h>
 #include <string>
 
+int n;
 using namespace std;
 
 # define M_PI           3.14159265358979323846  /* pi */
 
-#define NRPROB problemaf3x38
+#define NRPROB problematest2
 
 static bool estePar(int n)
 {
@@ -60,6 +61,31 @@ void reduceFraction(int& num, int& den) {
 	num /= gcdValue;
 	den /= gcdValue;
 }
+
+static int problematest2()
+{
+	int x, a, b, c;
+	cin >> x;
+	a = x / 100;
+	b = x / 10 % 10;
+	c = x % 10;
+	if (a == b && a == c && b == c)
+		cout << "da";
+	else cout << "nu";
+
+	return false;
+}
+
+static int problematest1()
+{
+	int a, b, c;
+	cin >> a >> b >> c;
+	if (a / c && b / c)
+		cout << "da";
+	else
+		cout << "Nu";
+	return false;
+}
 /*
 --------------------------------------------------------------------------------------------
 		
@@ -68,6 +94,95 @@ void reduceFraction(int& num, int& den) {
 --------------------------------------------------------------------------------------------
 
 */
+static int f4x6()
+{
+	int x, y, z;
+	cin >> x >> y >> z;
+	if ((abs(x) > 999999 || abs(y) > 999999 || abs(z) > 999999) || x < y && y < z)
+		cout << "Da";
+	else cout << "Nu";
+	return false;
+}
+
+static int f4x5()
+{
+	int n;
+	cin >> n;
+	if (n % 2 == 0 && n < 10000 && n >= 10)
+		cout << "Da";
+	else cout << "Nu";
+	return false;
+}
+
+static int f4x4()
+{
+	int a, b;
+	cin >> a >> b;
+
+	if (a > b) {
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+
+	cout << "Numerele in ordine crescatoare sunt: " << a << " " << b << endl;
+
+	return false;
+}
+
+static int f4x3()
+{
+	int a, b, x;
+	cin >> a >> b >> x;
+	if (a < b || (x >= a && x <= b))
+		cout << "Da";
+	else
+		cout << "Nu";
+
+	return false;
+}
+
+static int f4x2()
+{
+	int a, b;
+	cin >> a >> b;
+	if (b != 0)
+		cout << a / b;
+	else if (b == 0)
+		cout << "Impartire imposibila";
+
+	return false;
+}
+
+static int f4x1()
+{
+	int a;
+	cin >> a;
+	if (a % 2 == 0)
+		cout << "Numar par";
+	else cout << "Numar impar";
+	return false;
+}
+
+static int problema833()
+{
+	int a, b, x;
+	cin >> a >> b;
+	if (a > b)
+	{
+		x = a - b;
+		cout << "Primul copil este mai mare cu " << x << " ani";
+
+	}
+	else if (b > a) {
+		x = b - a;
+		cout << "Al doilea copil este mai mare cu " << x << " ani";
+	}
+	else if (b == a)
+		cout << "Copiii au varste egale";
+	return false;
+}
+
 static int problemaf3x38()
 {
 	double a, b;

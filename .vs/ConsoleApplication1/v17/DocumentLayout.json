@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Mihai\\Source\\Repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{33CFC39D-7B83-417E-8E74-0C87F23A14DE}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{523F0CED-8B02-4C55-92F1-B8B07E9BF654}|ConsoleApplication2\\ConsoleApplication2.vcxproj|C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication2\\ConsoleApplication2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{523F0CED-8B02-4C55-92F1-B8B07E9BF654}|ConsoleApplication2\\ConsoleApplication2.vcxproj|solutionrelative:ConsoleApplication2\\ConsoleApplication2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleApplication2.cpp",
+              "DocumentMoniker": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication2\\ConsoleApplication2.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication2\\ConsoleApplication2.cpp",
+              "ToolTip": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication2\\ConsoleApplication2.cpp",
+              "RelativeToolTip": "ConsoleApplication2\\ConsoleApplication2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-14T16:02:55.09Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +53,7 @@
               "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
               "ToolTip": "C:\\Users\\Mihai\\source\\repos\\pb-info-projects\\ConsoleApplication1\\ConsoleApplication1.cpp",
               "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
-              "ViewState": "AgIAADAAAAAAAAAAAADwv0cAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-17T12:56:40.677Z",
               "EditorCaption": ""
